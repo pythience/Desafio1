@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Relación Precios y Cantidades en Venta</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="8c7ef509-da3d-4b3c-ba07-58041cc0619b" data-root-id="8177"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="8628">
+          {"42414d9d-e19d-4f90-88c9-dd4047df3af8":{"roots":{"references":[{"attributes":{"below":[{"id":"8187","type":"LinearAxis"}],"left":[{"id":"8192","type":"LinearAxis"}],"plot_width":900,"renderers":[{"id":"8187","type":"LinearAxis"},{"id":"8191","type":"Grid"},{"id":"8192","type":"LinearAxis"},{"id":"8196","type":"Grid"},{"id":"8205","type":"BoxAnnotation"},{"id":"8208","type":"BoxAnnotation"},{"id":"8211","type":"PolyAnnotation"},{"id":"8219","type":"GlyphRenderer"},{"id":"8266","type":"LabelSet"},{"id":"8268","type":"Label"}],"title":{"id":"8176","type":"Title"},"toolbar":{"id":"8203","type":"Toolbar"},"x_range":{"id":"8179","type":"DataRange1d"},"x_scale":{"id":"8183","type":"LinearScale"},"y_range":{"id":"8181","type":"DataRange1d"},"y_scale":{"id":"8185","type":"LinearScale"}},"id":"8177","subtype":"Figure","type":"Plot"},{"attributes":{"background_fill_color":{"value":"white"},"border_line_color":{"value":"black"},"plot":{"id":"8177","subtype":"Figure","type":"Plot"},"render_mode":"css","text":".+ Dataset Properatti 2017 +.","x":70,"x_units":"screen","y":270,"y_units":"screen"},"id":"8268","type":"Label"},{"attributes":{},"id":"8185","type":"LinearScale"},{"attributes":{},"id":"8183","type":"LinearScale"},{"attributes":{"format":"00"},"id":"8269","type":"NumeralTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"8205","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"8175","type":"ColumnDataSource"},"glyph":{"id":"8217","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8218","type":"Circle"},"selection_glyph":null,"view":{"id":"8220","type":"CDSView"}},"id":"8219","type":"GlyphRenderer"},{"attributes":{"level":"glyph","plot":{"id":"8177","subtype":"Figure","type":"Plot"},"source":{"id":"8175","type":"ColumnDataSource"},"text":{"field":"place_name"},"text_color":{"value":"grey"},"text_font_size":{"value":"8pt"},"x":{"field":"count"},"x_offset":{"value":5},"y":{"field":"mean"},"y_offset":{"value":3}},"id":"8266","type":"LabelSet"},{"attributes":{"dimension":1,"plot":{"id":"8177","subtype":"Figure","type":"Plot"},"ticker":{"id":"8193","type":"BasicTicker"}},"id":"8196","type":"Grid"},{"attributes":{},"id":"8495","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"8175","type":"ColumnDataSource"}},"id":"8220","type":"CDSView"},{"attributes":{"plot":null,"text":"Relaci\u00f3n Precios y Cantidades en Venta por Barrio"},"id":"8176","type":"Title"},{"attributes":{},"id":"8197","type":"PanTool"},{"attributes":{"overlay":{"id":"8205","type":"BoxAnnotation"}},"id":"8199","type":"BoxZoomTool"},{"attributes":{"callback":null,"overlay":{"id":"8211","type":"PolyAnnotation"}},"id":"8201","type":"LassoSelectTool"},{"attributes":{},"id":"8193","type":"BasicTicker"},{"attributes":{"plot":{"id":"8177","subtype":"Figure","type":"Plot"},"ticker":{"id":"8188","type":"BasicTicker"}},"id":"8191","type":"Grid"},{"attributes":{"axis_label":"Precio Aprox en D\u00f3lares","formatter":{"id":"8269","type":"NumeralTickFormatter"},"plot":{"id":"8177","subtype":"Figure","type":"Plot"},"ticker":{"id":"8193","type":"BasicTicker"}},"id":"8192","type":"LinearAxis"},{"attributes":{"callback":null,"data":{"count":[79,29,1023,584,324,1063,2761,178,793,2079,694,3,158,194,216,285,281,173,1089,363,137,265,148,452,44,681,171,2599,204,483,363,28,24,60,84,34,235,101,18,633,1437,223,442,524,161,1115,69,11,21,1131,254,29,85,350,67,109,8,1,32,8,1449,378],"mean":{"__ndarray__":"k7+WMxLN/kDCck8jRAUAQdYUck1lwgJBzBI6IjBPAEFJGXg6jRAEQW9VtQhhyRFBsmtSkcJ4EUEl6h28iW3+QNstsVeOqxVBBq34+JTWBEGMDhGqEf8IQQAAAABAsxFB1tQaV1pmAUFxvpS3/Yn8QMzXjS4tuAJBFizh8XapBEFKVOd0+r8BQQ2zgyNcX/ZAlzJc69ABAkGcPah8DzT/QPoqYWwidBNBCN2orkzI/UB2ovlC7t3+QJwI2b1eGv1ARhdddIFw/UANCabeTBcUQZfyn6vikf9APHoBJ7KEEkHd3Nxc7WonQT0QBqb9WwlBGKTdtdFrB0HVQR0UJ14WQQAAAABgQfhAq6qqqtI1B0HhehSuQfABQUtLS0sbmvpA9LARblqU/kDNOuwef5z6QKuqqqowA/dAP7t5q7pdKEFc4ZtZxTYXQRaUYbWSxxRBlfPbYb4eBEH0NqMIliYWQYfLgE9+8AFBo1AmvCVCBEGCuXZg9i8AQYwuuujy4vpASZIkSfKHAUFAIqNq1tQBQZi8GxgrpAVBTyMs97S6+0DFpSA1c8/1QOcRYqyDJgFB5ewWfvX2/kD0vZJu+7z/QAAAAACIoQJBAAAAAIDA9EAAAAAAt5H7QML1KFwrSO9AxoaAdZ0XA0Gp4W9TA5gCQQ==","dtype":"float64","shape":[62]},"place_name":["Abasto","Agronom\u00eda","Almagro","Balvanera","Barracas","Barrio Norte","Belgrano","Boca","Boedo","Caballito","Capital Federal","Catalinas","Centro / Microcentro","Chacarita","Coghlan","Colegiales","Congreso","Constituci\u00f3n","Flores","Floresta","Las Ca\u00f1itas","Liniers","Mataderos","Monserrat","Monte Castro","Nu\u00f1ez","Once","Palermo","Palermo Chico","Palermo Hollywood","Palermo Soho","Palermo Viejo","Parque Avellaneda","Parque Centenario","Parque Chacabuco","Parque Chas","Parque Patricios","Paternal","Pompeya","Puerto Madero","Recoleta","Retiro","Saavedra","San Cristobal","San Nicol\u00e1s","San Telmo","Tribunales","Velez Sarsfield","Versalles","Villa Crespo","Villa Devoto","Villa General Mitre","Villa Lugano","Villa Luro","Villa Ortuzar","Villa Pueyrred\u00f3n","Villa Real","Villa Riachuelo","Villa Santa Rita","Villa Soldati","Villa Urquiza","Villa del Parque"],"std":{"__ndarray__":"oszc6Mh/7UDtMxvPwQ/jQFrZrDmh0vlAEdmuqcVB9UDaYSGiTP38QAY/zZXOkxBB2Hozo8URE0FnPwxS6oH5QM/fHRZ+0RlByjPWQCZ2AEEuQyAsj7QMQcrTAdd0fAtBzdtNPou3A0EDvoVzuDTrQDai7V9HYfZA7NYkNNDw9kD+miH0RcIAQcRBc7LXe+lA2DbSLuniAEFCsgikr43nQOsyZs1WsApB9sosSFYM8EBRpk35qUr8QOgCJfCvJfJA8comKX0Z5UAwPwaywjsiQeJTKr8+efBA1ZUKE1aCFkHHth73ZE8vQcsGNimCBglBvsH8D+kyAUEvE9jhG94QQXwBEhQ4xeFAHkta534++kDr1fs6PZ/yQDvcnjQaT95A4qNR9FDl8EDaRwqN7vHnQJ/bl9J2JuZA63kpU4DkJEHce5P8C3UVQfOWyetvXRRB6K/yp8ea+0DkT24SOcYUQUhRzzMgb/VACDzGfXlDNUGZE1D1GabwQL0zas4CAOVAVxZFmuzQ6UAI7KYU3oDxQEr8P2wW1v9AbqedxTsQ8ECCLGiYOl/nQEMYIwBvaP1AXlTel3y87UCyEXys8Q3oQKUfGPMxQ+NAAAAAAAAA+H86VwU7no3sQFjYGrdr/s1AzDeRUseS8kAB/ZHXnTHxQA==","dtype":"float64","shape":[62]}},"selected":{"id":"8497","type":"Selection"},"selection_policy":{"id":"8498","type":"UnionRenderers"}},"id":"8175","type":"ColumnDataSource"},{"attributes":{},"id":"8202","type":"ResetTool"},{"attributes":{"fill_color":{"value":"blue"},"line_color":{"value":"blue"},"x":{"field":"count"},"y":{"field":"mean"}},"id":"8217","type":"Circle"},{"attributes":{"callback":null},"id":"8181","type":"DataRange1d"},{"attributes":{"callback":null},"id":"8179","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"xs_units":"screen","ys_units":"screen"},"id":"8211","type":"PolyAnnotation"},{"attributes":{},"id":"8497","type":"Selection"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"8208","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"count"},"y":{"field":"mean"}},"id":"8218","type":"Circle"},{"attributes":{},"id":"8498","type":"UnionRenderers"},{"attributes":{},"id":"8188","type":"BasicTicker"},{"attributes":{},"id":"8198","type":"WheelZoomTool"},{"attributes":{"axis_label":"Departamentos en Venta","formatter":{"id":"8495","type":"BasicTickFormatter"},"plot":{"id":"8177","subtype":"Figure","type":"Plot"},"ticker":{"id":"8188","type":"BasicTicker"}},"id":"8187","type":"LinearAxis"},{"attributes":{"callback":null,"overlay":{"id":"8208","type":"BoxAnnotation"}},"id":"8200","type":"BoxSelectTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"8197","type":"PanTool"},{"id":"8198","type":"WheelZoomTool"},{"id":"8199","type":"BoxZoomTool"},{"id":"8200","type":"BoxSelectTool"},{"id":"8201","type":"LassoSelectTool"},{"id":"8202","type":"ResetTool"}]},"id":"8203","type":"Toolbar"}],"root_ids":["8177"]},"title":"Bokeh Application","version":"1.0.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('8628').textContent;
+                  var render_items = [{"docid":"42414d9d-e19d-4f90-88c9-dd4047df3af8","roots":{"8177":"8c7ef509-da3d-4b3c-ba07-58041cc0619b"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
